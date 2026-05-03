@@ -84,7 +84,7 @@ export default function GovernancePage() {
                   Neutralität bedeutet hier nicht Meinungslosigkeit, sondern verlässliche und transparente Prozesslogik.
                 </p>
                 <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-5">
-                  Prozess > Person. Logs > Gerüchte. Regeln > Willkür.
+                  {"Prozess > Person. Logs > Gerüchte. Regeln > Willkür."}
                 </div>
               </div>
             ),
