@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 222 47% 5%;
+  --fg: 210 40% 96%;
+  --muted: 215 20% 65%;
+  --cyan: 191 100% 50%;
+  --violet: 262 84% 64%;
+  --blue: 217 91% 60%;
+  --green: 142 76% 45%;
+  --gold: 38 92% 50%;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  background-image:
+    radial-gradient(circle at 50% -10%, rgba(0,212,255,.15), transparent 35%),
+    radial-gradient(circle at 95% 10%, rgba(139,92,246,.12), transparent 30%),
+    radial-gradient(circle at 10% 35%, rgba(37,99,235,.10), transparent 25%),
+    linear-gradient(180deg, rgba(2,6,23,1) 0%, rgba(3,7,18,1) 40%, rgba(2,6,23,1) 100%);
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(0,212,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.glass {
+  @apply bg-white/5 border border-white/10 backdrop-blur-xl;
+}
+
+.section-title {
+  @apply text-3xl md:text-5xl font-black tracking-tight;
+}
+
+.omega-gradient-text {
+  background: linear-gradient(135deg, white 0%, #cbd5e1 45%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.small-label {
+  @apply uppercase tracking-[0.22em] text-cyan-400 text-xs font-mono;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/10;
+}
+
+
+.premium-grid {
+  background-image:
+    linear-gradient(rgba(34,211,238,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34,211,238,.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.orbit-ring {
+  border: 1px solid rgba(34,211,238,.18);
+  box-shadow: inset 0 0 60px rgba(34,211,238,.06), 0 0 120px rgba(139,92,246,.08);
+}
+
+.timeline-line {
+  background: linear-gradient(180deg, rgba(34,211,238,.1), rgba(34,211,238,.75), rgba(139,92,246,.65), rgba(34,211,238,.1));
+}
+
+.lux-card {
+  @apply rounded-[2rem] border border-white/10 bg-white/[0.045] backdrop-blur-xl shadow-[0_30px_120px_rgba(0,0,0,0.35)];
+}
+
+.lux-card-strong {
+  @apply rounded-[2rem] border border-cyan-400/20 bg-white/[0.055] backdrop-blur-xl shadow-[0_30px_140px_rgba(34,211,238,0.08)];
+}
+
+.glow-dot {
+  @apply size-2 rounded-full bg-cyan-300 shadow-[0_0_25px_rgba(34,211,238,0.9)];
+}
